@@ -20,6 +20,11 @@
     src: url('./resources/Radikal\ W03\ Black\ Italic.ttf') format('truetype');
 }
 
+@font-face{
+    font-family: 'atoo';
+    src: url('./resources/atto.ttf') format('truetype');
+}
+
 body{
     background-color: #EDEDED;
     background-image: url('./resources/cardboard-copy.png');
@@ -49,10 +54,6 @@ header {
     padding-left: 4vw;
     padding-top: 3vh;
     z-index: 5;
-    /* opacity: 1;
-    -webkit-transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-    -moz-transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-    transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1); */
 }
 
 @media screen and (max-width: 766px){
@@ -145,11 +146,6 @@ a.btn.contact-btn:hover{
     opacity: 0;
 }
 
-/* .navigation span {
-    font-size: 25px;
-    font-weight: bolder;
-} */
-
   @media screen and (max-width: 1200px){
 .landing {
     display: block;
@@ -158,11 +154,8 @@ a.btn.contact-btn:hover{
 .landing {
     position: relative;
     width: 100%;
-    /* height: calc(110vh - 5vw);
-    max-height: 100vh; */
     height: 100vh;
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     color: #FC7382;
@@ -176,15 +169,6 @@ a.btn.contact-btn:hover{
     font-family: 'radikal';
 }
 
-/* .quote{
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-} */
-
 .self-description {
     text-align: center;
     display: block;
@@ -195,12 +179,6 @@ a.btn.contact-btn:hover{
     z-index: 0;
     font-family: 'myanmar mn';
     font-size: 2.6vh;
-    /* -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; */
 }
 
 .work {
@@ -213,29 +191,11 @@ a.btn.contact-btn:hover{
     background: none;
     padding-left: 12vw;
     overflow: hidden;
-    /* -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; */
 }
 
 .work-item {
     padding-bottom: 12vh;
 }
-/* .work-item_feature {
-    width: 100%;
-    overflow: hidden; 
-}
-.work-item_feature .work-description {
-    max-width: 100%; 
-}
-@media screen and (max-width: 766px) {
-.work-item_feature {
-    width: 90vw;
-    padding-bottom: 18vw; } 
-} */
 
 .work-image {
     width: 75%;
@@ -243,10 +203,15 @@ a.btn.contact-btn:hover{
     -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.25);
     -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.25);
     box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.25);
+    transition: box-shadow .3s ease-in-out;
 }
-/* .work-image_mobile {
-    display: none; 
-} */
+
+.work-image:hover{
+    -webkit-box-shadow: 12px 12px 6px -7px rgba(0,0,0,0.5);
+    -moz-box-shadow: 12px 12px 6px -7px rgba(0,0,0,0.5);
+    box-shadow: 12px 12px 6px -7px rgba(0,0,0,0.5);
+}
+
 @media screen and (max-width: 766px) {
 .work-image_mobile {
     display: block; 
@@ -346,7 +311,7 @@ a.btn.contact-btn:hover{
     padding: 1rem;
     text-align: right;
     line-height: 1.5;
-    font-family:'myanmar mn';
+    font-family:'atto', sans-serif;
     color: white;
     font-size: 4vh;
     margin-right: 2vw;
@@ -373,8 +338,6 @@ body.modal-open .main{
     height: 12vh;
     margin-top: 6vh;
 }
-
-
 
 @media screen and (max-width: 760px){
     .modal-title{
