@@ -12,17 +12,17 @@
 
 @font-face{
     font-family: 'sangam';
-    src: url('resources/Myanmar\ Sangam\ MN.ttc') format('truetype');
+    src: url('./resources/Myanmar\ Sangam\ MN.ttc') format('truetype');
 }
 
 @font-face{
     font-family: 'radikal';
-    src: url('resources/Radikal\ W03\ Black\ Italic.ttf') format('truetype');
+    src: url('./resources/Radikal\ W03\ Black\ Italic.ttf') format('truetype');
 }
 
 body{
     background-color: #EDEDED;
-    background-image: url('/resources/cardboard.png');
+    background-image: url('./resources/cardboard.png');
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
