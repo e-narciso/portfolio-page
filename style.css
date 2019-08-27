@@ -1,0 +1,388 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face{
+    font-family: 'myanmar mn';
+    src: url('./resources/Myanmar\ MN.ttc') format('truetype');
+}
+
+@font-face{
+    font-family: 'sangam';
+    src: url('resources/Myanmar\ Sangam\ MN.ttc') format('truetype');
+}
+
+@font-face{
+    font-family: 'radikal';
+    src: url('resources/Radikal\ W03\ Black\ Italic.ttf') format('truetype');
+}
+
+body{
+    background-color: #EDEDED;
+    background-image: url('/resources/cardboard.png');
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ 
+footer, 
+header,  
+main, 
+nav, 
+section{
+    display: block;
+}
+
+header {
+    position: absolute;
+    font-family: 'myanmar mn';
+    color: #FC7382;
+    top: 0;
+    left: 0;
+    width: 95vw;
+    padding-left: 4vw;
+    padding-top: 3vh;
+    z-index: 5;
+    /* opacity: 1;
+    -webkit-transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1); */
+}
+
+@media screen and (max-width: 766px){
+    header {
+        padding: 40px 20px;
+    }
+}
+
+.navbar-brand{
+    font-size: 2.8vh;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+hr{
+    border: 4px dashed #FC7382;
+    border-style: none none dashed; 
+    color: transparent; 
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.lower-hr {
+    display: none;
+}
+
+@media screen and (max-width: 575px){
+    .middle-hr {
+        display: none;
+    }
+    .lower-hr {
+        display: block;
+    }
+}
+
+.modal-btn{
+    margin-right: 2vw;
+}
+
+a.btn {
+    color: #FC7382;
+    text-decoration: none;
+    position: relative;
+    font-size: 2.8vh;
+    z-index: 6;
+}
+
+a.btn.modal-btn:hover{
+    cursor: pointer;
+    color: #5050e8;
+}
+
+a.btn.contact-btn:hover{
+    cursor: pointer;
+    color: #5050e8;
+}
+
+.dropdown-item{
+    text-align: right;
+    font-size: 2.6vh;
+}
+
+.dropdown-item:hover {
+    color: blue;
+    text-decoration: none;
+    background:none;
+}
+
+.dropdown-menu {
+    min-width: 5rem;
+    background: none;
+    border: none;
+}
+
+.navbar {
+    width: 95%;
+    margin: 0 auto;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.navbar-hide {
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* .navigation span {
+    font-size: 25px;
+    font-weight: bolder;
+} */
+
+  @media screen and (max-width: 1200px){
+.landing {
+    display: block;
+}}
+
+.landing {
+    position: relative;
+    width: 100%;
+    /* height: calc(110vh - 5vw);
+    max-height: 100vh; */
+    height: 100vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    color: #FC7382;
+}
+
+.landing h1{
+    font-size: 6vh;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10vw;
+    font-family: 'radikal';
+}
+
+/* .quote{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+} */
+
+.self-description {
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    font-family: 'myanmar mn';
+    font-size: 2.6vh;
+    /* -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+}
+
+.work {
+    position: relative;
+    padding-top: 4vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: top;
+    background: none;
+    padding-left: 12vw;
+    overflow: hidden;
+    /* -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+}
+
+.work-item {
+    padding-bottom: 12vh;
+}
+/* .work-item_feature {
+    width: 100%;
+    overflow: hidden; 
+}
+.work-item_feature .work-description {
+    max-width: 100%; 
+}
+@media screen and (max-width: 766px) {
+.work-item_feature {
+    width: 90vw;
+    padding-bottom: 18vw; } 
+} */
+
+.work-image {
+    width: 75%;
+    padding: 0;
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.25);
+}
+/* .work-image_mobile {
+    display: none; 
+} */
+@media screen and (max-width: 766px) {
+.work-image_mobile {
+    display: block; 
+    justify-content: center;
+    width: 90%;
+} 
+}
+
+.work-title {
+    font-family: "sangam", sans-serif;
+    display: block;
+    font-size: 16px;
+    width: 14vw;;
+    line-height: 25px;
+    margin: 36px 0 0 0;
+    color: #000; 
+}
+
+@media screen and (max-width: 766px) {
+    .work-title {
+    margin: 26px 0 0 0; } 
+}
+
+
+.work-description {
+    font-family: "sangam", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #4E4F52; 
+    width: 24vw;
+}
+
+@media screen and (max-width: 766px) {
+    .work-description {
+    width: 90%; 
+} 
+}
+
+.col-md-6{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.work-tag {
+    font-family: "sangam", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 18px 0 0 0;
+    color: #909398;
+}
+
+.modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border:none;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.3;
+    font-family:'myanmar mn';
+    color: white;
+    font-size: 10vh;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #5050e8cc;
+    background-clip: padding-box;
+    border: 20px solid #FFE200;
+    border-bottom-left-radius: 100px;
+    outline: 0;
+    border-top-right-radius: 100px;
+}
+
+
+
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+    text-align: right;
+    line-height: 1.5;
+    font-family:'myanmar mn';
+    color: white;
+    font-size: 4vh;
+    margin-right: 2vw;
+    margin-top: -5vh;
+}
+
+body.modal-open .main{
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.shortbox{
+    width: 100%;
+    background-color: #FC7382;
+    height: 3vh;
+}
+
+.bigbox{
+    width: 100%;
+    background-color: #FC7382;
+    height: 12vh;
+    margin-top: 6vh;
+}
+
+
+
+@media screen and (max-width: 760px){
+    .modal-title{
+        font-size: 10vw;
+        margin-left: -2vw;
+    }
+    .modal-body{
+        font-size: 6vw;
+        margin-bottom: 1vh;
+    }
+ }
