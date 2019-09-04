@@ -21,7 +21,7 @@
 }
 
 @font-face{
-    font-family: 'atoo';
+    font-family: 'atto';
     src: url('./resources/atto.ttf') format('truetype');
 }
 
@@ -181,6 +181,14 @@ a.btn.contact-btn:hover{
     font-size: 2.6vh;
 }
 
+#scroll{
+    font-family: 'atto';
+    font-size: 1vh;
+    color: rgba(78, 79, 82, 0.295);
+    letter-spacing: 3vw;
+    text-align: center;
+}
+
 .work {
     position: relative;
     padding-top: 4vw;
@@ -232,7 +240,9 @@ a.btn.contact-btn:hover{
 
 @media screen and (max-width: 766px) {
     .work-title {
-    margin: 26px 0 0 0; } 
+    margin: 26px 0 0 0;
+    width: 100%; 
+} 
 }
 
 
